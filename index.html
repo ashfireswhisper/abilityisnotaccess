@@ -233,6 +233,36 @@
             color: var(--paper);
         }
 
+        .formal-bridge {
+            padding-block: 4rem;
+            background: var(--cobalt-soft);
+            text-align: center;
+        }
+
+        .formal-bridge-inner {
+            width: min(100% - 2rem, 52rem);
+            margin-inline: auto;
+        }
+
+        .formal-bridge h2 {
+            color: var(--cobalt-deep);
+            font-size: clamp(1.8rem, 6vw, 3rem);
+        }
+
+        .formal-bridge p {
+            max-width: 38rem;
+            margin: 1rem auto 0;
+            color: var(--ink);
+        }
+
+        .formal-bridge a {
+            display: inline-block;
+            margin-top: 1.25rem;
+            color: var(--cobalt-deep);
+            font-weight: 700;
+            text-underline-offset: .2em;
+        }
+
         .newsletter {
             width: 100%;
             margin-top: 6rem;
@@ -322,6 +352,13 @@
             }
         }
 
+        @media (max-width: 47.99rem) {
+            .quote {
+                min-height: 34vh;
+                padding-block: 2.5rem;
+            }
+        }
+
         @media (prefers-reduced-motion: reduce) {
             html {
                 scroll-behavior: auto;
@@ -344,7 +381,7 @@
 
     <header class="hero">
         <h1>Ability is not access</h1>
-        <h2>Your best day is not your every day.</h2><br><br>
+        <h2>Your best day is not your every day.</h2>
         <p>Yet we're still judged as if it is.</p>
         <a class="hero-button" href="#newsletter-heading">Get Research Updates</a>
     </header>
@@ -380,17 +417,25 @@
                 <p>“On Tuesday I finished 3 days worth of work, but today I could barely finish 1 email.”</p>
             </div>
             <div class="quote">
-                <p>“I can explain the solution, but I can't make myself begin.”</p>
+                <p>“To you it may have been ‘just a phone call,’ but it broke my concentration, and I couldn’t find my way back to the task for the rest of the day.”</p>
             </div>
             <div class="quote">
                 <p>“Everyone keeps pointing to my best day as proof I should always be able to do it.”</p>
             </div>
         </section>
 
+        <section class="formal-bridge" aria-labelledby="formal-bridge-heading">
+            <div class="formal-bridge-inner">
+                <h2 id="formal-bridge-heading">Want the formal framework?</h2>
+                <p>Access Architecture develops the research, concepts, and publications behind this idea.</p>
+                <a href="https://accessarchitecture.github.io/" target="_blank" rel="noopener noreferrer">Explore Access Architecture →</a>
+            </div>
+        </section>
+
         <section class="newsletter" aria-labelledby="newsletter-heading">
             <div class="newsletter-inner">
                 <h2 id="newsletter-heading">Stay Updated</h2>
-                <p>Get updates as Ability Is Not Access Develops.</p>
+                <p>Get updates as Ability Is Not Access develops.</p>
                 <div class="kit-form-slot" aria-label="Newsletter signup placeholder">
                     <script async data-uid="abaefa8c5e" src="https://niadtech.kit.com/abaefa8c5e/index.js"></script>
                 </div>
